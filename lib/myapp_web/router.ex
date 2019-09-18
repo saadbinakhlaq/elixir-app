@@ -5,7 +5,8 @@ defmodule MyappWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", MyappWeb do
+  scope "/v1", MyappWeb.V1, as: :v1 do
     pipe_through :api
+    resources "/counters", CounterController, only: [:create, :index]
   end
 end
