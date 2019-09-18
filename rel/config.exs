@@ -39,6 +39,7 @@ environment :prod do
   set include_src: false
   set cookie: :"iqkAsnA]ZM!@nT.zG_ZFNKWSqQ3c!y*]mcRCGo`8<3srkp2s1`>gxDK3GXTyN9te"
   set vm_args: "rel/vm.args"
+  set post_start_hooks: "rel/hooks/post_start"
 end
 
 # You may define one or more releases in this file.
