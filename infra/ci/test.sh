@@ -7,7 +7,7 @@ cat > /etc/postgresql/*/main/pg_hba.conf <<-EOF
 host  all postgres localhost trust
 EOF
 
-
+ls
 # start postgres
 service postgresql start
 
