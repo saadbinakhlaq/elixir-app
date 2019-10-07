@@ -7,8 +7,6 @@ config :myapp, Myapp.Repo,
   hostname: System.get_env("DB_HOST") || "db",
   pool: Ecto.Adapters.SQL.Sandbox
 
-# We don't run a server during test. If one is required,
-# you can enable the server option below.
 config :myapp, MyappWeb.Endpoint,
   http: [port: 4002],
   server: false
